@@ -22,4 +22,4 @@ button_print.clicked.connect(print_helloworld)
 window.show()
 # to display our window 
 sys.exit(app_obj.exec_())
-#here we 
+#here we enter to the main loop
