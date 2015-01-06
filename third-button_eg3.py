@@ -1,5 +1,9 @@
 from PyQt4 import QtGui 
 import sys
+
+def print_helloworld():
+	print "Hello World"
+
 # in the above steps we import the required
 app_obj  = QtGui.QApplication(sys.argv)	# here we create a application object for our pgm
 window = QtGui.QWidget()
@@ -14,6 +18,7 @@ button_print.move(100,20)
 #here we set the position of button
 window.setWindowIcon(QtGui.QIcon("icons/expeyes.png"))
 # here we set the window icon
+button_print.clicked.connect(print_helloworld)
 window.show()
 # to display our window 
 sys.exit(app_obj.exec_())
